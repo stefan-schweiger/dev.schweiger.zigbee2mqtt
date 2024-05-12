@@ -21,11 +21,11 @@ const alarm = (capability: `alarm_${string}`, invert?: boolean): [string, Capabi
 ];
 
 export const capabilities: CapabilityMap = {
-  // "placeholder" capabilities
+  // "placeholder" capabilities for cards
   action: ['trigger_action', (v, opts) => v[opts.property]],
   effect: ['action_effect', (v, opts) => v[opts.property]],
 
-  // light
+  // complex composite capabilities
   'light#state': [
     'onoff',
     (v, opts) => v[opts.property] === 'ON',
@@ -104,6 +104,7 @@ export const capabilities: CapabilityMap = {
 
   'climate#current_heating_setpoint': ['target_temperature', (v, opts) => v[opts.property], (v: number, opts) => ({ [opts.property]: v })],
 
+  // simple capabilities such as measure, meter, alarm
   // ambience
   temperature: measure('measure_temperature'),
   local_temperature: measure('measure_temperature.local'),

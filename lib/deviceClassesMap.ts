@@ -5,6 +5,7 @@ type ClassConfig = {
   subClass?: Record<string, string[]>;
 };
 
+// used to determine the device class (and with it icon) based on the device description
 export const deviceClasses: Record<DeviceClass, ClassConfig> = {
   light: {
     keywords: ['led', 'bulb', 'e27', 'e14', 'gu10', 'dimmer'],
