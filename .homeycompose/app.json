@@ -1,0 +1,35 @@
+{
+  "id": "dev.schweiger.zigbee2mqtt",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Zigbee2MQTT"
+  },
+  "description": {
+    "en": "Adds support for MyBrand devices."
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Stefan Schweiger",
+    "email": "st.schweiger@me.com"
+  },
+  "brandColor": "#f7b31b",
+  "api": {
+    "connect": {
+      "method": "POST",
+      "path": "/connect"
+    }
+  }
+}

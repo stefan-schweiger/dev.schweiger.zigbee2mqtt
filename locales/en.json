@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "title": "Configure Connection",
+    "server": "Server",
+    "topic": "Topic",
+    "username": "Username",
+    "password": "Password"
+  }
+}

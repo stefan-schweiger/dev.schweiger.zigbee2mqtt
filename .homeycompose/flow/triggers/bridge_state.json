@@ -1,0 +1,18 @@
+{
+  "title": {
+    "en": "Bridge state changed"
+  },
+  "titleFormatted": {
+    "en": "Bridge state changed to [[state]]"
+  },
+  "args": [
+    {
+      "name": "state",
+      "type": "dropdown",
+      "values": [
+        { "id": "online", "label": { "en": "Online" } },
+        { "id": "offline", "label": { "en": "Offline" } }
+      ]
+    }
+  ]
+}

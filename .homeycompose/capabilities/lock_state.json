@@ -1,0 +1,12 @@
+{
+  "type": "enum",
+  "title": { "en": "Lock State" },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "values": [
+    { "id": "not_fully_locked", "title": { "en": "Not fully locked" } },
+    { "id": "locked", "title": { "en": "Locked" } },
+    { "id": "unlocked", "title": { "en": "Unlocked" } }
+  ]
+}

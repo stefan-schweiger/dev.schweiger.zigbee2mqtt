@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "title": "Trigger Action",
+  "getable": false,
+  "setable": false,
+  "uiComponent": null
+}

@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "title": "Action Effect",
+  "getable": false,
+  "setable": false,
+  "uiComponent": null
+}

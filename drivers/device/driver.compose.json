@@ -1,0 +1,32 @@
+{
+  "name": {
+    "en": "Device"
+  },
+  "class": "other",
+  "capabilities": ["button.repair"],
+  "capabilitiesOptions": {
+    "button.repair": {
+      "maintenanceAction": true,
+      "title": { "en": "Try to Repair" },
+      "desc": { "en": "If the device is not responding, repairing the device may resolve the issue" }
+    }
+  },
+  "platforms": ["local"],
+  "connectivity": ["lan"],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "list_my_devices",
+      "template": "list_devices",
+      "navigation": { "next": "add_my_devices" }
+    },
+    {
+      "id": "add_my_devices",
+      "template": "add_devices"
+    }
+  ]
+}

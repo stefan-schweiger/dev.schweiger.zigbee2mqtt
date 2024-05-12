@@ -1,0 +1,156 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Device Information"
+    },
+    "children": [
+      {
+        "id": "friendly_name",
+        "type": "label",
+        "label": {
+          "en": "Friendly Name"
+        },
+        "value": ""
+      },
+      {
+        "id": "ieee_address",
+        "type": "label",
+        "label": {
+          "en": "IEEE Address"
+        },
+        "value": ""
+      },
+      {
+        "id": "vendor",
+        "type": "label",
+        "label": {
+          "en": "Vendor"
+        },
+        "value": ""
+      },
+      {
+        "id": "model",
+        "type": "label",
+        "label": {
+          "en": "Model"
+        },
+        "value": ""
+      },
+      {
+        "id": "description",
+        "type": "label",
+        "label": {
+          "en": "Description"
+        },
+        "value": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Device Settings"
+    },
+    "children": [
+      {
+        "id": "device_class",
+        "type": "dropdown",
+        "value": "other",
+        "label": {
+          "en": "Device Class"
+        },
+        "hint": {
+          "en": "This setting will effect the behavior in Homey flows."
+        },
+        "values": [
+          {
+            "id": "light",
+            "label": {
+              "en": "Light"
+            }
+          },
+          {
+            "id": "socket",
+            "label": {
+              "en": "Socket"
+            }
+          },
+          {
+            "id": "heater",
+            "label": {
+              "en": "Heater"
+            }
+          },
+          {
+            "id": "sensor",
+            "label": {
+              "en": "Sensor"
+            }
+          },
+          {
+            "id": "thermostat",
+            "label": {
+              "en": "Thermostat"
+            }
+          },
+          {
+            "id": "lock",
+            "label": {
+              "en": "Lock"
+            }
+          },
+          {
+            "id": "button",
+            "label": {
+              "en": "Button"
+            }
+          },
+          {
+            "id": "windowcoverings",
+            "label": {
+              "en": "Window Coverings"
+            }
+          },
+          {
+            "id": "other",
+            "label": {
+              "en": "Other"
+            }
+          }
+        ]
+      },
+      {
+        "id": "availability-handling",
+        "type": "dropdown",
+        "label": {
+          "en": "Availability Handling"
+        },
+        "hint": {
+          "en": "You need to have \"Availability\" enabled in your Zigbee2MQTT bridge for this to have an effect.\n\n\"Ignore\" will not update the Homey device state if it becomes unavailable.\n\n\"Power Off\" will try to change the Homey device state to off if it becomes unavailable and otherwise ignore it."
+        },
+        "value": "default",
+        "values": [
+          {
+            "id": "default",
+            "label": {
+              "en": "Default"
+            }
+          },
+          {
+            "id": "ignore",
+            "label": {
+              "en": "Ignore"
+            }
+          },
+          {
+            "id": "power-off",
+            "label": {
+              "en": "Power Off"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
