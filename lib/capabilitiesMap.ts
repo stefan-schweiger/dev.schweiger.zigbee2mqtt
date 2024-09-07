@@ -14,7 +14,7 @@ const withTransition = <T>(value: T, duration: number | undefined): T & { transi
 };
 
 const measure = (capability: `measure_${string}`): [string, CapabilityGetValueMapper] => [capability, (v, opts) => v[opts.property]];
-const meter = (capability: `meter_${string}`): [string, CapabilityGetValueMapper] => [capability, (v, opts) => v[opts.property]];
+const meter = (capability: `meter_${string}`): [string, CapabilityGetValueMapper] => [capability, (v, opts) => Number(v[opts.property])];
 const alarm = (capability: `alarm_${string}`, invert?: boolean): [string, CapabilityGetValueMapper] => [
   capability,
   (v, opts) => (invert ? !v[opts?.property] : v[opts?.property]),
@@ -93,8 +93,10 @@ export const capabilities: CapabilityMap = {
 
   'cover#state': [
     'windowcoverings_state',
-    (v, opts) => ({ UP: 'up', STOP: 'idle', DOWN: 'down' }[v[opts.property] as string]),
-    (v: string) => ({ state: { up: 'UP', idle: 'STOP', down: 'DOWN' }[v] }),
+    // "state" will remain open until fully closed but is used for controlling movement
+    // so we must map the shown state to "moving"
+    (v, opts) => ({ UP: 'up', STOP: 'idle', DOWN: 'down' }[(v['moving'] ?? v[opts.property]) as string]),
+    (v: string, opts) => ({ [opts.property]: { up: 'OPEN', idle: 'STOP', down: 'CLOSE' }[v] }),
   ],
   'cover#position': ['windowcoverings_set', (v, opts) => v[opts.property] / 100, (v: number, opts) => ({ [opts.property]: v * 100 })],
   'cover#tilt': ['windowcoverings_tilt_set', (v, opts) => v[opts.property] / 100, (v: number, opts) => ({ [opts.property]: v * 100 })],
@@ -130,7 +132,9 @@ export const capabilities: CapabilityMap = {
   illuminance_lux: measure('measure_luminance.lux'),
 
   // water
+  flow: measure('measure_water'),
   water_flow: measure('measure_water'),
+  'cyclic_quantitative_irrigation#irrigation_capacity': meter('meter_water'),
   water_consumed: meter('meter_water'),
 
   // alarms
@@ -148,4 +152,6 @@ export const capabilities: CapabilityMap = {
   water_leak: alarm('alarm_water'),
   rain: alarm('alarm_water.rain'),
   battery_low: alarm('alarm_battery'),
+
+  current_device_status: ['alarm_water', (v, opts) => v[opts.property] !== 'normal_state'],
 };

@@ -350,39 +350,63 @@
               },
               "values": [
                 {
-                  "id": "light",
+                  "id": "other",
                   "label": {
-                    "en": "Light"
+                    "en": "Other"
                   }
                 },
                 {
-                  "id": "socket",
+                  "id": "airconditioning",
                   "label": {
-                    "en": "Socket"
+                    "en": "Air Conditioner"
                   }
                 },
                 {
-                  "id": "heater",
+                  "id": "airfryer",
                   "label": {
-                    "en": "Heater"
+                    "en": "Air Fryer"
                   }
                 },
                 {
-                  "id": "sensor",
+                  "id": "airpurifier",
                   "label": {
-                    "en": "Sensor"
+                    "en": "Air Purifier"
                   }
                 },
                 {
-                  "id": "thermostat",
+                  "id": "airtreatment",
                   "label": {
-                    "en": "Thermostat"
+                    "en": "Air Treatment"
                   }
                 },
                 {
-                  "id": "lock",
+                  "id": "amplifier",
                   "label": {
-                    "en": "Lock"
+                    "en": "Amplifier"
+                  }
+                },
+                {
+                  "id": "battery",
+                  "label": {
+                    "en": "Battery"
+                  }
+                },
+                {
+                  "id": "bicycle",
+                  "label": {
+                    "en": "Bicycle"
+                  }
+                },
+                {
+                  "id": "blinds",
+                  "label": {
+                    "en": "Blinds"
+                  }
+                },
+                {
+                  "id": "boiler",
+                  "label": {
+                    "en": "Boiler"
                   }
                 },
                 {
@@ -392,15 +416,369 @@
                   }
                 },
                 {
-                  "id": "windowcoverings",
+                  "id": "camera",
                   "label": {
-                    "en": "Window Coverings"
+                    "en": "Camera"
                   }
                 },
                 {
-                  "id": "other",
+                  "id": "car",
                   "label": {
-                    "en": "Other"
+                    "en": "Car"
+                  }
+                },
+                {
+                  "id": "coffeemachine",
+                  "label": {
+                    "en": "Coffee Machine"
+                  }
+                },
+                {
+                  "id": "cooktop",
+                  "label": {
+                    "en": "Cooktop"
+                  }
+                },
+                {
+                  "id": "curtain",
+                  "label": {
+                    "en": "Curtains"
+                  }
+                },
+                {
+                  "id": "dehumidifier",
+                  "label": {
+                    "en": "Dehumidifier"
+                  }
+                },
+                {
+                  "id": "diffuser",
+                  "label": {
+                    "en": "Diffuser"
+                  }
+                },
+                {
+                  "id": "dishwasher",
+                  "label": {
+                    "en": "Dishwasher"
+                  }
+                },
+                {
+                  "id": "doorbell",
+                  "label": {
+                    "en": "Doorbell"
+                  }
+                },
+                {
+                  "id": "dryer",
+                  "label": {
+                    "en": "Dryer"
+                  }
+                },
+                {
+                  "id": "evcharger",
+                  "label": {
+                    "en": "EV Charger"
+                  }
+                },
+                {
+                  "id": "fan",
+                  "label": {
+                    "en": "Fan"
+                  }
+                },
+                {
+                  "id": "faucet",
+                  "label": {
+                    "en": "Faucet"
+                  }
+                },
+                {
+                  "id": "fireplace",
+                  "label": {
+                    "en": "Fireplace"
+                  }
+                },
+                {
+                  "id": "freezer",
+                  "label": {
+                    "en": "Freezer"
+                  }
+                },
+                {
+                  "id": "fridge",
+                  "label": {
+                    "en": "Fridge"
+                  }
+                },
+                {
+                  "id": "fridge_and_freezer",
+                  "label": {
+                    "en": "Fridge & Freezer"
+                  }
+                },
+                {
+                  "id": "fryer",
+                  "label": {
+                    "en": "Fryer"
+                  }
+                },
+                {
+                  "id": "gameconsole",
+                  "label": {
+                    "en": "Game Console"
+                  }
+                },
+                {
+                  "id": "garagedoor",
+                  "label": {
+                    "en": "Garage Door"
+                  }
+                },
+                {
+                  "id": "grill",
+                  "label": {
+                    "en": "Grill"
+                  }
+                },
+                {
+                  "id": "heater",
+                  "label": {
+                    "en": "Heater"
+                  }
+                },
+                {
+                  "id": "heatpump",
+                  "label": {
+                    "en": "Heat Pump"
+                  }
+                },
+                {
+                  "id": "homealarm",
+                  "label": {
+                    "en": "Home Security"
+                  }
+                },
+                {
+                  "id": "hood",
+                  "label": {
+                    "en": "Hood"
+                  }
+                },
+                {
+                  "id": "humidifier",
+                  "label": {
+                    "en": "Humidifier"
+                  }
+                },
+                {
+                  "id": "kettle",
+                  "label": {
+                    "en": "Kettle"
+                  }
+                },
+                {
+                  "id": "lawnmower",
+                  "label": {
+                    "en": "Lawn Mower"
+                  }
+                },
+                {
+                  "id": "light",
+                  "label": {
+                    "en": "Light"
+                  }
+                },
+                {
+                  "id": "lock",
+                  "label": {
+                    "en": "Lock"
+                  }
+                },
+                {
+                  "id": "mediaplayer",
+                  "label": {
+                    "en": "Media Player"
+                  }
+                },
+                {
+                  "id": "microwave",
+                  "label": {
+                    "en": "Microwave"
+                  }
+                },
+                {
+                  "id": "mop",
+                  "label": {
+                    "en": "Mop"
+                  }
+                },
+                {
+                  "id": "multicooker",
+                  "label": {
+                    "en": "Multicooker"
+                  }
+                },
+                {
+                  "id": "networkrouter",
+                  "label": {
+                    "en": "Network Router"
+                  }
+                },
+                {
+                  "id": "oven",
+                  "label": {
+                    "en": "Oven"
+                  }
+                },
+                {
+                  "id": "oven_and_microwave",
+                  "label": {
+                    "en": "Combi Microwave Oven"
+                  }
+                },
+                {
+                  "id": "petfeeder",
+                  "label": {
+                    "en": "Pet Feeder"
+                  }
+                },
+                {
+                  "id": "radiator",
+                  "label": {
+                    "en": "Radiator"
+                  }
+                },
+                {
+                  "id": "remote",
+                  "label": {
+                    "en": "Remote"
+                  }
+                },
+                {
+                  "id": "scooter",
+                  "label": {
+                    "en": "Scooter"
+                  }
+                },
+                {
+                  "id": "sensor",
+                  "label": {
+                    "en": "Sensor"
+                  }
+                },
+                {
+                  "id": "settopbox",
+                  "label": {
+                    "en": "Set-top Box"
+                  }
+                },
+                {
+                  "id": "shutterblinds",
+                  "label": {
+                    "en": "Shutter Blinds"
+                  }
+                },
+                {
+                  "id": "siren",
+                  "label": {
+                    "en": "Siren"
+                  }
+                },
+                {
+                  "id": "smokealarm",
+                  "label": {
+                    "en": "Smoke Alarm"
+                  }
+                },
+                {
+                  "id": "socket",
+                  "label": {
+                    "en": "Wall Plug"
+                  }
+                },
+                {
+                  "id": "solarpanel",
+                  "label": {
+                    "en": "Solar Panel"
+                  }
+                },
+                {
+                  "id": "speaker",
+                  "label": {
+                    "en": "Speaker"
+                  }
+                },
+                {
+                  "id": "sprinkler",
+                  "label": {
+                    "en": "Sprinkler"
+                  }
+                },
+                {
+                  "id": "sunshade",
+                  "label": {
+                    "en": "Sunshade"
+                  }
+                },
+                {
+                  "id": "thermostat",
+                  "label": {
+                    "en": "Thermostat"
+                  }
+                },
+                {
+                  "id": "tv",
+                  "label": {
+                    "en": "TV"
+                  }
+                },
+                {
+                  "id": "vacuumcleaner",
+                  "label": {
+                    "en": "Vacuum Cleaner"
+                  }
+                },
+                {
+                  "id": "vehicle",
+                  "label": {
+                    "en": "Vehicle"
+                  }
+                },
+                {
+                  "id": "washer",
+                  "label": {
+                    "en": "Washing Machine"
+                  }
+                },
+                {
+                  "id": "washer_and_dryer",
+                  "label": {
+                    "en": "Washer & Dryer"
+                  }
+                },
+                {
+                  "id": "waterheater",
+                  "label": {
+                    "en": "Water Heater"
+                  }
+                },
+                {
+                  "id": "waterpurifier",
+                  "label": {
+                    "en": "Water Purifier"
+                  }
+                },
+                {
+                  "id": "watervalve",
+                  "label": {
+                    "en": "Water Valve"
+                  }
+                },
+                {
+                  "id": "windowcoverings",
+                  "label": {
+                    "en": "Window Coverings"
                   }
                 }
               ]
